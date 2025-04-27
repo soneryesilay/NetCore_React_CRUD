@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-// API URL'sini ortam değişkeninden al veya varsayılan değeri kullan
-const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5163/api';
+// API URL'sini ortam değişkeninden al
+const API_URL = process.env.REACT_APP_API_URL;
 
 const apiClient = axios.create({
   baseURL: API_URL,
